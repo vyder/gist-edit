@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+
+    margin-top: 50px;
+}
+
+h1 small {
+    font-size: 0.8em;
+    font-weight: 200;
+    color: #DDD;
+
+    margin-left: 10px;
+}
+
+table {
+    width: 100%;
+}
+td {
+    vertical-align: top;
+}
+td.left { width: 50%; }
+td.right { width: 50%; }
+
+/* Utilities */
+.clear {
+    clear: both;
+}
+
+.chill {
+   transition: all .25s ease-in-out;
+   -moz-transition: all .25s ease-in-out;
+   -webkit-transition: all .25s ease-in-out;
+}
