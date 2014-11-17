@@ -16,7 +16,7 @@ $(document).ready(function() {
     // Setup a PaneManager
     var noop = function() {};
     var options = {
-        animationPeriod: 2000,
+        animationPeriod: 1000,
         animationStyle: 'easeOutQuint',
         complete: noop
     };

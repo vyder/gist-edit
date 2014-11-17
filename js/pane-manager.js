@@ -83,8 +83,8 @@ var PaneManager = (function($, _) {
         _animateElementStyles: function(element, styles, cb) {
             cb = cb || _noop;
             $(element).animate(styles, {
-                duration: this.animationPeriod,
-                easing: this.animationStyle,
+                duration: this.opts.animationPeriod,
+                easing: this.opts.animationStyle,
                 complete: cb
             });
         },
