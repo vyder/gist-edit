@@ -5,6 +5,7 @@ table.code-blocks {
 }
 table.code-blocks td {
     vertical-align: top;
+    white-space: nowrap;
 }
 table.code-blocks td.left { width: 50%; }
 table.code-blocks td.right { width: 50%; }
