@@ -14,14 +14,6 @@ body {
     margin-top: 35px;
 }
 
-h1 small {
-    font-size: 0.8em;
-    font-weight: 200;
-    color: #DDD;
-
-    margin-left: 10px;
-}
-
 /* Utilities */
 .pull-left {
     float: left;

@@ -60,4 +60,11 @@ $(document).ready(function() {
     });
     // Kick off the onboarding process
     onboardingManager.start();
+
+    // Hook up help mouseover
+    $('#help').hover(function() {
+        $('.help-text').fadeIn(300);
+    }, function() {
+        $('.help-text').fadeOut(300);
+    });
 });
