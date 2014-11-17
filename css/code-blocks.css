@@ -9,3 +9,5 @@ table.code-blocks td {
 }
 table.code-blocks td.left { width: 50%; }
 table.code-blocks td.right { width: 50%; }
+
+#editor { height: 584px; }
