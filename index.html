@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/toolbox.css">
     <link rel="stylesheet" href="css/code-blocks.css">
+    <link rel="stylesheet" href="css/onboarding.css">
 
     <link rel="stylesheet" href="css/gist.css">
     <link rel="stylesheet" href="css/base-gist-override.css">
@@ -23,31 +24,31 @@
     <!-- Import 3P Libraries -->
     <script src="js/lib/jquery-2.1.1.min.js"></script>
     <script src="js/lib/jquery-ui.min.js"></script>
-    <script src="js/lib/tinycolor.js"></script>
     <script src="js/lib/underscore-min.js"></script>
     <script src="js/lib/ace/src-min-noconflict/ace.js"></script>
 
     <script src="js/pane-manager.js"></script>
+    <script src="js/onboarding-manager.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
     <div id="container">
 
-        <h1>Gist Styles Editor<small>(Hit Ctrl+Enter to apply styles)</small></h1>
-        <div class="toolbox top">
+        <h1 class="component">Gist Styles Editor<small>(Hit Ctrl+Enter to apply styles)</small></h1>
+        <div class="component toolbox top">
             <div id="left-pane-control" class="ss-icon ss-standard pull-left">expand Gist</div>
             <div id="right-pane-control" class="ss-icon ss-standard pull-right">expand Stylesheet</div>
             <div class="clear"></div>
         </div>
         <table class="code-blocks"><tr>
-            <td class="left">
+            <td class="component left">
                 <script src="https://gist.github.com/vyder/21c4016b856fca553ae3.js"></script>
             </td>
-            <td class="right">
+            <td class="component right">
                 <div id="editor"></div>
             </td>
         </tr></table>
-        <div class="toolbox bottom">
+        <div class="component toolbox bottom">
             <div class="ss-icon ss-standard chill pull-right">help</div>
         </div>
     </div>
