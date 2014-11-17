@@ -15,12 +15,12 @@ $(document).ready(function() {
 
     // Setup a PaneManager
     var noop = function() {};
-    var options = {
+    var animationOptions = {
         animationPeriod: 1000,
         animationStyle: 'easeOutQuint',
         complete: noop
     };
-    var paneManager = new PaneManager(panes, options);
+    var paneManager = new PaneManager(panes, animationOptions);
 
     // Export paneManager to global scope
     window.paneManager = paneManager;
@@ -36,4 +36,28 @@ $(document).ready(function() {
             editor.resize();
         });
     });
+
+    // Setup the onboarding process
+    var onboardingManager = new OnboardingManager();
+    onboardingManager.setup({
+        setup: function() {
+            $('.component').css('opacity', '0.4');
+            $('h1.component').css('opacity', '0.1');
+        },
+        start: function(completeProcess, abandonProcess) {
+            $('body').click(function() {
+                abandonProcess();
+            });
+            setTimeout(function() {
+                completeProcess();
+            }, 3000);
+        },
+        cleanup: function() {
+            $('.component').animate({
+                opacity: 1
+            }, animationOptions);
+        }
+    });
+    // Kick off the onboarding process
+    onboardingManager.start();
 });
