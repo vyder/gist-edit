@@ -1,0 +1,27 @@
+/* Toolbox */
+
+div.toolbox {
+    height: 40px;
+    /* Margin to line bounding box up
+       exactly with the code blocks */
+    margin: 0 2px 0 3px;
+    /*background-color: #40A2F2;*/
+}
+
+div.toolbox div.ss-icon {
+    display: inline-block;
+    font-size: 24px;
+    color: #DDD;
+    cursor: pointer;
+
+    margin: 5px;
+}
+div.toolbox div.ss-icon:hover { color: #CCC; }
+div.toolbox div.ss-icon:active { color: #BBB; }
+
+div.ss-icon.pull-left:first-child {
+    margin-left: 0px;
+}
+div.ss-icon.pull-right:last-child {
+    margin-right: 0px;
+}

@@ -1,0 +1,7 @@
+.gist {
+    height: 100%;
+}
+.gist .gist-file {
+    height: 100%;
+    margin-bottom: 0px !important;
+}

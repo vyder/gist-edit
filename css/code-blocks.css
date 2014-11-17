@@ -1,0 +1,10 @@
+/* Code Blocks Table */
+table.code-blocks {
+    width: 100%;
+    table-layout: fixed;
+}
+table.code-blocks td {
+    vertical-align: top;
+}
+table.code-blocks td.left { width: 50%; }
+table.code-blocks td.right { width: 50%; }

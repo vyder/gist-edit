@@ -11,7 +11,7 @@ body {
     width: 80%;
     margin: 0 auto;
 
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 h1 small {
@@ -22,22 +22,13 @@ h1 small {
     margin-left: 10px;
 }
 
-table {
-    width: 100%;
-}
-td {
-    vertical-align: top;
-}
-td.left { width: 50%; }
-td.right { width: 50%; }
-
 /* Utilities */
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
 .clear {
     clear: both;
-}
-
-.chill {
-   transition: all .25s ease-in-out;
-   -moz-transition: all .25s ease-in-out;
-   -webkit-transition: all .25s ease-in-out;
 }
